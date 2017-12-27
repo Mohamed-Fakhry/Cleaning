@@ -5,8 +5,8 @@
     android:layout_height="wrap_content"
     android:background="#8fa5c7"
     android:orientation="vertical"
-
-    tools:context="iti.abdallah.cleaning.ui.order.OrderTypeFragment">
+    android:layoutDirection="rtl"
+    tools:context="alif.hamza.moquette.ui.order.OrderTypeFragment">
 
     <RelativeLayout
         android:id="@+id/headerL"
@@ -20,20 +20,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="Type of service"
+            android:text="نوع الخدمة"
             android:textColor="#fff"
             android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:padding="8dp">
 
             <View
                 android:layout_width="16dp"
                 android:layout_height="16dp"
+                android:layout_marginLeft="8dp"
                 android:background="@drawable/bg_steps" />
 
             <View
@@ -55,7 +56,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/fastTV"
+            android:id="@+id/secondTypeTV"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -72,7 +73,7 @@
             android:background="#b4d6ea"/>
 
         <TextView
-            android:id="@+id/normalTV"
+            android:id="@+id/firstTypeTV"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -82,6 +83,28 @@
             android:textSize="20sp"
             android:background="@color/colorAccent"
             android:textColor="@color/whiteColor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سعر الخدمة لمتر "
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/priceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp"/>
     </LinearLayout>
 
     <RelativeLayout
@@ -97,13 +120,13 @@
             android:id="@+id/nextL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:padding="8dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Next"
+                android:text="التالى"
                 android:textColor="#f9f9f9"
                 android:textSize="18sp" />
 
@@ -112,7 +135,8 @@
                 android:layout_height="24dp"
                 android:layout_gravity="center_vertical"
                 android:padding="4dp"
-                android:src="@drawable/ic_arrow" />
+                android:src="@drawable/ic_arrow"
+                android:rotation="180"/>
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>

@@ -4,9 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#c5000000"
-    tools:context="iti.abdallah.cleaning.ui.order.OrderFragment"
+    tools:context="alif.hamza.moquette.ui.order.OrderFragment"
     tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="81dp"
+    android:layoutDirection="rtl">
 
     <RelativeLayout
         android:id="@+id/headerL"
@@ -26,20 +27,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="Add Carpets"
+            android:text="اضف السجاده"
             android:textColor="#fff"
             android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:padding="8dp">
 
             <View
                 android:layout_width="16dp"
                 android:layout_height="16dp"
+                android:layout_marginLeft="8dp"
                 android:background="@drawable/bg_steps" />
 
             <View
@@ -74,14 +76,6 @@
             android:padding="8dp"
             app:layout_constraintBottom_toTopOf="@+id/footerL">
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_centerVertical="true"
-                android:layout_toLeftOf="@+id/addCarpetsTV"
-                android:scaleType="center"
-                android:src="@drawable/ic_plus" />
-
             <TextView
                 android:id="@+id/addCarpetsTV"
                 android:layout_width="wrap_content"
@@ -89,11 +83,19 @@
                 android:layout_centerInParent="true"
                 android:layout_gravity="center"
                 android:padding="8dp"
-                android:text="Add Carpets"
+                android:text="اضف سجادة"
                 android:textAlignment="center"
                 android:textColor="@color/colorAccent"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/addCarpetsTV"
+                android:scaleType="center"
+                android:src="@drawable/ic_plus" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -109,13 +111,13 @@
                 android:id="@+id/nextL"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
                 android:padding="8dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Next"
+                    android:text="التالى"
                     android:textColor="#f9f9f9"
                     android:textSize="18sp" />
 
@@ -124,7 +126,8 @@
                     android:layout_height="24dp"
                     android:layout_gravity="center_vertical"
                     android:padding="4dp"
-                    android:src="@drawable/ic_arrow" />
+                    android:src="@drawable/ic_arrow"
+                    android:rotation="180"/>
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="iti.abdallah.cleaning.ui.map.MapFragment">
+    tools:context="alif.hamza.moquette.ui.map.MapFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -26,8 +26,8 @@
             android:paddingLeft="48dp"
             android:paddingRight="48dp"
             android:paddingTop="8dp"
-            android:text="Wash Me"
-            android:textColor="#dfdfdf"
+            android:text="اطلب خدمة"
+            android:textColor="@color/whiteColor"
             android:textSize="22sp" />
 
         <ImageView

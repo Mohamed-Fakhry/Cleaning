@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/colorPrimary"
-    android:padding="16dp">
+    android:padding="32dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_menu_order"
+        android:layout_gravity="center"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Please Enter Carpets"
-        android:textSize="22sp"
+        android:text="من فضلك ادخل سجادة"
+        android:textSize="24sp"
         android:gravity="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/whiteColor"
         android:textStyle="bold"/>
 </LinearLayout>
